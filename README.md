@@ -1,8 +1,7 @@
 This is a very simple UI library for Roblox that allows you to easily style your UI elements using predefined classes.
 The inspiration is obviously a framework like Tailwind CSS.
 
-Feel free to use and modify this code as you see fit. If you have any questions or suggestions, please feel free to reach out to me:
-Discord: lakenzi
+Feel free to use and modify this code as you see fit. If you have any questions or suggestions, please feel free to reach out to me on Discord: lakenzi
 
 In case you actually use this, you do not need to credit me, but it would be appreciated.
 Adding new classes is fairly simple, and styling your UI is as easy as calling the :style() method.
@@ -32,8 +31,7 @@ Positions / Alignment / Shape:
 - rounded-md -> medium corner radius
 - rounded-lg -> large corner radius
 - rounded-full -> full circle corner radius
-- responsive -> converts offsets to scale relative to parent (auto-resize)
-^^^ (IN CASE THIS DOES NOT WORK, USE A RESCALE PLUGIN INSTEAD PLS, IT'S BETTER!)
+- responsive -> converts offsets to scale relative to parent (auto-resize) ---> (IN CASE THIS DOES NOT WORK, USE A RESCALE PLUGIN INSTEAD PLS, IT'S BETTER!)
 
 Effects / Shadows:
 - shadow ->  adds UIStroke
@@ -61,24 +59,3 @@ Other:
 - activated -> triggers on .Activated
 - dropdown-menu -> enables dropdown menu functionality
 - autotype -> types out text one character at a time (for text objects only)
-
-------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------
-
-- Example usage: (or just look at the premade client script in src/client/styles.client.luau)
-
-local UI = player.PlayerGui.UI
-local Style = require(game.ReplicatedStorage.Modules.Library)
-
-local clickme = Style.new(UI.ClickMe)
-clickme:style("bg-indigo-500", "bg-0", "hover-shadow", "hover-grow", "rounded-full", "text-white-100", "responsive", "bold", {
-    activated={
-        states = {
-            {BackgroundColor3 = Color3.fromRGB(34,197,94), Text = "<b>Now I'm Green!</b>", RichText = true},
-            {BackgroundColor3 = Color3.fromRGB(99, 102, 241), Text = "<b>Click Me!</b>", RichText = true}
-        },
-        time = 0.3,
-        style = Enum.EasingStyle.Quad,
-        direction = Enum.EasingDirection.Out
-    }
-})
