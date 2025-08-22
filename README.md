@@ -10,7 +10,7 @@ It's also recommended to use UIAspectRatio for better responsiveness, especially
 Available classes (37):
 
 Color / Transparency / Font:
-- bg-(color)-(shade) -> sets BackgroundColor3 (e.g., "bgcolor-blue-500")
+- bg-(color)-(shade) -> sets BackgroundColor3 (e.g., "bg-blue-500")
 - textcolor-(color)-(shade) ->sets TextColor3 (e.g., "textcolor-red-300")
 - placeholder-(color)-(shade) -> sets PlaceholderColor3 for TextBox (e.g., "placeholder-gray-400")
 - border-(color)-(shade) →-> sets UIStroke color (e.g., "border-black-500")
