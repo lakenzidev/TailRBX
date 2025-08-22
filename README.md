@@ -51,7 +51,7 @@ Hover Effects:
 - hover-beat -> heartbeat animation while hovering
 
 Interactions:
-- follow-mouse -> object follows mouse while hovered
+- follow-mouse -> Self explanatory
 - grab -> allows dragging with mouse click
 
 Other:
