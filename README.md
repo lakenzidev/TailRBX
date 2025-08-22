@@ -3,7 +3,6 @@ The inspiration is obviously a framework like Tailwind CSS.
 
 Feel free to use and modify this code as you see fit. If you have any questions or suggestions, please feel free to reach out to me:
 Discord: lakenzi
-Github: https://github.com/lakenzidev/
 
 In case you actually use this, you do not need to credit me, but it would be appreciated.
 Adding new classes is fairly simple, and styling your UI is as easy as calling the :style() method.
